@@ -34,7 +34,7 @@ Python 3.7 or later
 
 ## Installation
 
-To use the package, run ```pip install landx-xfers-sdk```
+To use the package, run ```pip install xfers-sdk```
 
 ## Usage
 
@@ -77,7 +77,7 @@ Reference: https://docs.xfers.com/reference/account-balance
 #### Bank Account Validation
 
 ```python
-balance = xfers.Bank
+bank = xfers.Bank
 bank.account_validation(account_no="123456", bank_short_code="BNI")
 ```
 
@@ -85,7 +85,7 @@ Reference: https://docs.xfers.com/reference/bank-account-validation
 
 #### List Disbursement Banks
 ```python
-balance = xfers.Bank
+bank = xfers.Bank
 bank.list()
 ```
 
@@ -333,5 +333,5 @@ xfers.Disbursements.get(disbursement_id="id")
 Returns a list of Disbursements.
 
 ```python
-x.Disbursements.list(created_after="2022-04-15")
+xfers.Disbursements.list(created_after="2022-04-15")
 ```

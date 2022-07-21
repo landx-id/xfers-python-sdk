@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "landx-xfers-sdk"
+name = "xfers-sdk"
 version = "0.1.0"
 description = ""
 authors = ["LandX Engineering <tech@landx.id>"]
