@@ -2,7 +2,7 @@
 import base64
 import requests
 from .network import XfersResponse
-from landx_xfers_sdk._config import production_api_url, staging_api_url
+from xfers_sdk._config import production_api_url, staging_api_url
 
 
 class _APIRequestor:

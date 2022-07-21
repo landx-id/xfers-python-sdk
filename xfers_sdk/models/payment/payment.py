@@ -1,11 +1,11 @@
 import datetime
-from landx_xfers_sdk._api_requestor import _APIRequestor
-from landx_xfers_sdk._extract_params import _extract_params
-from landx_xfers_sdk.models.payment_methods.entity.manage_payment_method import ManagePaymentMethodEntity
+from xfers_sdk._api_requestor import _APIRequestor
+from xfers_sdk._extract_params import _extract_params
+from xfers_sdk.models.payment_methods.entity.manage_payment_method import ManagePaymentMethodEntity
 from .entity.payment import PaymentEntity
-from landx_xfers_sdk.xfers_error import XfersError
-from landx_xfers_sdk._post_attributes import _post_attributes
-from landx_xfers_sdk.models._to_model import _to_model
+from xfers_sdk.xfers_error import XfersError
+from xfers_sdk._post_attributes import _post_attributes
+from xfers_sdk.models._to_model import _to_model
 from humps import camelize
 
 class Payment:

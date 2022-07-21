@@ -1,5 +1,5 @@
 import os
-from landx_xfers_sdk.xfers import Xfers
+from xfers_sdk.xfers import Xfers
 from datetime import datetime, timedelta
 
 API_KEY = os.getenv('XFERS_API_KEY')

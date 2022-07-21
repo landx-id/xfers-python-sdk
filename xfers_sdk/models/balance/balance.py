@@ -1,7 +1,7 @@
-from landx_xfers_sdk._api_requestor import _APIRequestor
+from xfers_sdk._api_requestor import _APIRequestor
 from .entity.balance import BalanceEntity
-from landx_xfers_sdk.xfers_error import XfersError
-from landx_xfers_sdk.models._to_model import _to_model
+from xfers_sdk.xfers_error import XfersError
+from xfers_sdk.models._to_model import _to_model
 
 class Balance:
     @staticmethod

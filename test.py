@@ -1,5 +1,5 @@
 from cgi import test
-from landx_xfers_sdk import __version__, Hello
+from xfers_sdk import __version__, Hello
 
 
 def test_version():
