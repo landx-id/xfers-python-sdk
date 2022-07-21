@@ -17,16 +17,11 @@ jobs:
         with:
           python-version: 3.9
 
-      - name: "Build a package"
+      - name: "Build and publish"
         run: |
           curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
           source ~/.poetry/env
+          poetry config pypi-token.pypi ${{ secrets.PYPI_API_TOKEN }}
           poetry version ${GITHUB_REF##*/}
           poetry build
           poetry publish
-
-      - name: Publish to pypi
-        uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          user: __token__
-          password: ${{ secrets.PYPI_API_TOKEN }}
