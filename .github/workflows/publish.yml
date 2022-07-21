@@ -1,0 +1,18 @@
+name: 'Publish package'
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish-to-pypi:
+    name: Publish package
+    runs-on: ubuntu-20.04
+    environment: Production
+    steps:
+      - name: Publish to pypi
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
