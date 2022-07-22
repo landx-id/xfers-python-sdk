@@ -1,8 +1,11 @@
 [tool.poetry]
 name = "xfers-sdk"
-version = "0.1.0"
-description = ""
+version = "1.0.0"
+description = "Xfers REST API Client for Python"
 authors = ["LandX Engineering <tech@landx.id>"]
+readme = "README.md"
+license = "MIT"
+
 
 [tool.poetry.dependencies]
 python = "^3.9"
